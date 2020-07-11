@@ -1,0 +1,71 @@
+<%- include('partials/header.ejs') %>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <style>
+        label{
+            padding-top:10px;
+        }
+        input {
+            border-width: 0 0 0.5px;
+            width: 100%;
+            padding: 5px;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+        input:focus {
+            border-color:grey;
+            outline:none;
+        }
+    </style>
+    
+
+    <title>Register</title>
+</head>
+
+
+<body style="background-repeat:no-repeat;background-image:url(/registerimage.jpg);background-size: 100% 100%;background-size:cover;font-family:'Times New Roman', serif;letter-spacing:0.5px;font-size:medium">
+    
+    <div class="container text-left" style="border:0.5px solid black;background-color:white;width:40%">       
+
+        <p style="background-color:red;">
+            <%= typeof msg !='undefined'?msg:'' %>
+        </p>
+
+        <h3 class="text-center">    REGISTER      </h3>
+        
+        <form action="/register" method="POST" enctype="multipart/form-data">
+            <label for="name">Name</label>
+            <input type="text" name="name" placeholder="Name">
+            <label for="username">Username</label>
+            <input type="text" name="username"  id="usernameid" placeholder="Username">
+            <label for="password" >Password</label>
+            <input type="text" name="password" placeholder="Password">
+            <label for="myImage">Image</label>
+            <input name="myImage" type="file">
+            <label for="email" >Email</label>
+            <input type="text" name="email" placeholder="email">
+            <label for="phonenumber">Phone Number</label>
+            <input type="number" name="phonenumber" placeholder="Phone Number">
+            <br>
+            <br>
+            <button class="btn btn-success">Submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>
+
+<%- include('partials/footer.ejs') %>
