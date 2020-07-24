@@ -37,12 +37,11 @@
 
 
 <body style="background-repeat:no-repeat;background-image:url(/registerimage.jpg);background-size: 100% 100%;background-size:cover;font-family:'Times New Roman', serif;letter-spacing:0.5px;font-size:medium">
-    
-    <div class="container text-left" style="border:0.5px solid black;background-color:white;width:40%">       
 
-        <p style="background-color:red;">
-            <%= typeof msg !='undefined'?msg:'' %>
-        </p>
+    <p style="background-color:#e3dfc8;text-align: center;">
+        <%= typeof msg !='undefined'?msg:'' %>
+    </p>
+    <div class="container text-left" style="border:0.5px solid black;background-color:white;width:40%">       
 
         <h3 class="text-center">    REGISTER      </h3>
         
@@ -67,5 +66,3 @@
     
 </body>
 </html>
-
-<%- include('partials/footer.ejs') %>

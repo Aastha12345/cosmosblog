@@ -18,15 +18,13 @@ router.post('/:_id/:user_id',function(req,res){
                 {
                     flag=1;
                     console.log('only one like per user')
-                    res.send('One like and dislike per user')
+                    res.send({success:false,msg:'You can like or dislike only once'})
                 }
             })
             if(flag==0)
             {
                 story.likes=story.likes+1
-                console.log(story.likes)
                 story.persons.push(req.params.user_id);
-                console.log(story.persons)
                 data1={
                     likes:story.likes,
                     persons:story.persons

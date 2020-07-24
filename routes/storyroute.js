@@ -12,7 +12,7 @@ const Story=require('../models/story')
 const middleware=require("../middleware/middleware");
 const { response } = require('../app');
 
-router.get('/',(req,res)=>{
+router.get('/',middleware.isLoggedIn,(req,res)=>{
     res.render('story');
 })  
 
@@ -104,7 +104,7 @@ router.post('/',middleware.isLoggedIn,function(req, res) {
 });
 
 
-router.get('/show/:_id',function(req,res){
+router.get('/show/:_id',middleware.isLoggedIn,function(req,res){
     Story.findOne({_id:req.params._id},(err,story)=>{
         if(err)
         {
@@ -119,7 +119,7 @@ router.get('/show/:_id',function(req,res){
 })
 
 
-router.get('/edit/:_id',function(req,res){
+router.get('/edit/:_id',middleware.isLoggedIn,function(req,res){
     Story.findOne({_id:req.params._id},(err,story)=>{
         if(err)
         {

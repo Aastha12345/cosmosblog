@@ -60,7 +60,7 @@ const upload=multer({
     }
     else
     {
-        cb('Error:Images only')
+        cb('Error:Only images should be uploaded')
     }
   }
 
@@ -82,9 +82,10 @@ router.post('/',(req,res,next)=>{
 //validate fields
 router.post('/',[
         body('name').isAlpha(),
-        body('password').isLength({ min: 5 }),
+        body('password').isLength({ min:5 }),
         body('email').isEmail(),
-        body('phonenumber').isLength({min:10})
+        body('phonenumber').isLength({min:10}),
+        body('myImage').isLength({min:1}).withMessage("Upload Profile Picture")
     ],(req,res,next)=>{
     // Finds the validation errors in this request and wraps them in an object with handy functions
     const errors = validationResult(req);
