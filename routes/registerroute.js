@@ -20,7 +20,7 @@ router.get('/findUserName/:userName',function(req,res){
         if(err)
         {
             res.send({
-                success:false,message:'Something went wrong in registerroute'
+                success:false,message:'Something went wrong in findUserName/:username'
             })
         }
         else{
@@ -42,7 +42,6 @@ const upload=multer({
     fileFilter:function(req,file,cb){
         checkfiletype(file,cb);
     }
-  
   }).single('myImage');
   
   function checkfiletype(file,cb)
@@ -82,10 +81,10 @@ router.post('/',(req,res,next)=>{
 //validate fields
 router.post('/',[
         body('name').isAlpha(),
-        body('password').isLength({ min:5 }),
+        body('username').isLength({min:1}),
+        body('password').isLength({ min:1 }),
         body('email').isEmail(),
-        body('phonenumber').isLength({min:10}),
-        body('myImage').isLength({min:1}).withMessage("Upload Profile Picture")
+        body('phonenumber').isLength({min:1}),
     ],(req,res,next)=>{
     // Finds the validation errors in this request and wraps them in an object with handy functions
     const errors = validationResult(req);
@@ -122,7 +121,7 @@ router.post('/',function(req,res){
                 };
                 console.log('User created');
                 
-                res.redirect('/index')
+                res.render('login',{msg:'Your profile has been created.Login to proceed further.'})
             })
         }
     })

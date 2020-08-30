@@ -18,6 +18,9 @@ router.get('/',function(req,res){
     })
 })
 
+router.get('/error',function(err,res){
+    res.render('error');
+})
 
 
 module.exports=router;

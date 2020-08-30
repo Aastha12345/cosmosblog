@@ -9,9 +9,8 @@ const User=require('../models/user');
 //LOGOUT THE USER USING PASSPORT
 router.get('/logout', function(req, res){
     req.logout();
-    res.redirect('/index')
+    res.render('login',{msg:'You have been successfully logged out'})
 });
-
 
 
 router.get('/profile/:_id',function(req,res){

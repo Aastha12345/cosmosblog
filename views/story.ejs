@@ -31,6 +31,10 @@
             border-color:grey;
             outline:none;
         }
+        .required
+        {
+            color:red;
+        }
     </style>
 
 </head>
@@ -43,25 +47,26 @@
         <p style="background-color:red;">
             <%= typeof msg !='undefined'?msg:'' %>
         </p>
-
-        <h3>    MY STORY      </h3>        
+        
+		<h3>    MY Blog      </h3>        
         
         <form action="/story" method="POST" enctype="multipart/form-data">
-            <label for="title">Title</label>
+            <label for="title">Title<span class="required">*</span></label>
             <input name="title" class="inputfull"></input>
 
-            <label for="myImage">Image:</label>
+            <label for="myImage">Image<span class="required">*</span>&nbsp&nbsp&nbsp&nbsp&nbsp(Allowed Formats are jpeg,jpg,png and gif)</label>
             <input name="myImage" class="inputfull" type="file">
     
-            <label for="description">Description</label>
+            <label for="description">Description<span class="required">*</span></label>
             <textarea rows="5" cols="100" class="inputfull" name="description"></textarea>
             
             <div>
             <a><button class="btn btn-primary">SAVE</button></a>
+            <p>Fields marked <span class="required">*</span> are mandatory</p>
             </div>
         </form>
     </div>
-
+    
 </body>
 </html>
 
