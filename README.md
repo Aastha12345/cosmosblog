@@ -23,17 +23,21 @@ Inform in case of errors by raising issues.
 Website in development stage. More features and improvements will be added in the future.
 
 ## Demo
+|           Index page                      |                Blog                       |
+| ------------------------------------------| ------------------------------------------|
+| ![alt-text-1](./demo_images/login.png)    | ![alt-text-2](./demo_images/register.png) |
 
-|           Index page                |                Blog                  |
-| ------------------------------------| -------------------------------------|
-| ![alt-text-1]()                     | ![alt-text-2]()                      |
+
+|           Index page                      |                Blog                       |
+| ------------------------------------------| ------------------------------------------|
+| ![alt-text-1](./demo_images/index.png)    | ![alt-text-2](./demo_images/blog page.png)|
 
 <br>
 <br>
 
-|           Login page                |         Register page                |
-| ----------------------------------- | ------------------------------------ |
-| ![alt-text-1]()                     | ![alt-text-2]()                      |
+|           Login page                             |         Register page                                                 |
+| -------------------------------------------------| ----------------------------------------------------------------------|
+| ![alt-text-1](./demo_images/comment section.png) |![alt-text-2](./demo_imgages/create new blog.png)                      |
 
 <br>
 
