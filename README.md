@@ -23,9 +23,9 @@ Inform in case of errors by raising issues.
 Website in development stage. More features and improvements will be added in the future.
 
 ## Demo
-|           Index page                      |                Blog                       |
-| ------------------------------------------| ------------------------------------------|
-| ![alt-text-1](./demo_images/login.PNG)    | ![alt-text-2](./demo_images/register.PNG) |
+|           Index page                           |                Blog                       |
+| -----------------------------------------------| ------------------------------------------|
+| ![alt-text-1](./demo_images/login page.PNG)    | ![alt-text-2](./demo_images/register.PNG) |
 
 
 |           Index page                      |                Blog                       |
