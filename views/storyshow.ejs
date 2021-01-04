@@ -16,6 +16,10 @@
     <title>Story Show</title>
     
     <style>
+        body
+        {
+            font-family:Arial, Helvetica, sans-serif;
+        }
         div{
             margin-bottom:15px;
         }
@@ -36,7 +40,7 @@
     <div class="container" style="width:80%;" > 
         
             <h1><%= story.title %></h1>
-            <img src="/uploads/story/<%=story.photo%>" height="80%" width="70%">
+            <img src="/uploads/story/<%=story.photo%>" onerror="this.onerror=null; this.src='/image404.jpg'" height="60%" width="60%">
             <br> 
             <br>       
             <p name="description"><%= story.description %></p>
