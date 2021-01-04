@@ -25,19 +25,19 @@ Website in development stage. More features and improvements will be added in th
 ## Demo
 |           Index page                      |                Blog                       |
 | ------------------------------------------| ------------------------------------------|
-| ![alt-text-1](./demo_images/login.png)    | ![alt-text-2](./demo_images/register.png) |
+| ![alt-text-1](./demo_images/login.PNG)    | ![alt-text-2](./demo_images/register.PNG) |
 
 
 |           Index page                      |                Blog                       |
 | ------------------------------------------| ------------------------------------------|
-| ![alt-text-1](./demo_images/index.png)    | ![alt-text-2](./demo_images/blog page.png)|
+| ![alt-text-1](./demo_images/index.PNG)    | ![alt-text-2](./demo_images/blog page.PNG)|
 
 <br>
 <br>
 
 |           Login page                             |         Register page                                                 |
 | -------------------------------------------------| ----------------------------------------------------------------------|
-| ![alt-text-1](./demo_images/comment section.png) |![alt-text-2](./demo_imgages/create new blog.png)                      |
+| ![alt-text-1](./demo_images/comment section.PNG) |![alt-text-2](./demo_imgages/create new blog.PNG)                      |
 
 <br>
 
