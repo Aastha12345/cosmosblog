@@ -29,13 +29,13 @@ Website in development stage. More features and improvements will be added in th
 
 
 |           Index page                      |                Blog                       |
-| ------------------------------------------| ------------------------------------------|
+| ------------------------------------------|-------------------------------------------|
 | ![alt-text-1](./demo_images/index.PNG)    | ![alt-text-2](./demo_images/blog_page.PNG)|
 
 
-|           Comment Section                        |         Create New Blog                                               |
-| -------------------------------------------------| ----------------------------------------------------------------------|
-| ![alt-text-1](./demo_images/comment_section.PNG) |![alt-text-2](./demo_imgages/create_new_blog.PNG)                      |
+|           Comment Section                        | 
+| -------------------------------------------------| 
+| ![alt-text-1](./demo_images/comment_section.PNG) |
 
 <br>
 
