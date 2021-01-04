@@ -40,7 +40,7 @@
         
         <h2>    PROFILE     </h2>
 
-        <img src="/uploads/profile/<%=user.photo%>" height="50%" width="40%">
+        <img src="/uploads/profile/<%=user.photo%>" onerror="this.onerror=null; this.src='/image404.jpg'" height="50%" width="40%">
         <br>
         <label for="name">Name</label>
         <p><%= user.name  %></p> 
